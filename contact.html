@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - MTG Card Shop</title>
+    <link rel="stylesheet" href="styles/styles.css">
+</head>
+<body>
+    <header>
+        <nav id="global-navigation">
+            <div id="nav-container">
+                <div id="logo">
+                    <h1>MTG Card Shop</h1>
+                    <p id="tagline">Your Magic Card Store</p>
+                </div>
+                <ul id="nav-menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="urzas-saga.html">Urza's Saga</a></li>
+                    <li><a href="urzas-legacy.html">Urza's Legacy</a></li>
+                    <li><a href="urzas-destiny.html">Urza's Destiny</a></li>
+                    <li><a href="contact.html" class="active">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="contact-section">
+            <h2>Contact Us</h2>
+            <p class="contact-intro">
+                Have questions about our products or need help with your order? We're here to help!
+            </p>
+
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <h3>Contact Information</h3>
+                    <div class="contact-item">
+                        <h4>Address</h4>
+                        <p>Random MTG Card Shop Inc.<br>
+                        randomgatan 23<br>
+                        123 45 Blåkulla</p>
+                    </div>
+                    <div class="contact-item">
+                        <h4>Phone</h4>
+                        <p>123456789</p>
+                    </div>
+                    <div class="contact-item">
+                        <h4>Email</h4>
+                        <p>info@randommtgshop.com<br>
+                        support@randommtgshop.com</p>
+                    </div>
+                    <div class="contact-item">
+                        <h4>Business Hours</h4>
+                        <p>Monday-Friday: 10:00 - 18:00<br>
+                        Saturday: 10:00 - 16:00<br>
+                        Sunday: Closed</p>
+                    </div>
+                </div>
+
+                <form class="contact-form" action="#" method="post">
+                    <h3>Send Message</h3>
+                    
+                    <div class="form-group">
+                        <label for="name">Name *</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email Address *</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="phone">Phone Number</label>
+                        <input type="tel" id="phone" name="phone">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="subject">Subject</label>
+                        <select id="subject" name="subject">
+                            <option value="">Select subject</option>
+                            <option value="order">Order questions</option>
+                            <option value="product">Product questions</option>
+                            <option value="shipping">Shipping and delivery</option>
+                            <option value="return">Returns and claims</option>
+                            <option value="deck-help">Deck building help</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Preferred Format *</label>
+                        <div class="radio-group">
+                            <label>
+                                <input type="radio" name="format" value="standard" required>
+                                Standard
+                            </label>
+                            <label>
+                                <input type="radio" name="format" value="modern" required>
+                                Modern
+                            </label>
+                            <label>
+                                <input type="radio" name="format" value="legacy" required>
+                                Legacy
+                            </label>
+                            <label>
+                                <input type="radio" name="format" value="commander" required>
+                                Commander
+                            </label>
+                            <label>
+                                <input type="radio" name="format" value="other" required>
+                                Other/Not sure
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Services of Interest</label>
+                        <div class="checkbox-group">
+                            <label>
+                                <input type="checkbox" name="services" value="deck-building">
+                                Deck building help
+                            </label>
+                            <label>
+                                <input type="checkbox" name="services" value="singles">
+                                Single cards
+                            </label>
+                            <label>
+                                <input type="checkbox" name="services" value="sealed">
+                                Sealed products
+                            </label>
+                            <label>
+                                <input type="checkbox" name="services" value="accessories">
+                                Accessories (sleeves, deck boxes)
+                            </label>
+                            <label>
+                                <input type="checkbox" name="services" value="newsletter">
+                                Subscribe to newsletter
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="budget">Budget ($)</label>
+                        <input type="range" id="budget" name="budget" min="0" max="1000" step="10" value="100">
+                        <div class="form-footer">
+                            <span>$0</span>
+                            <span id="budget-value">$100</span>
+                            <span>$1000+</span>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">Message *</label>
+                        <textarea id="message" name="message" rows="5" placeholder="Describe how we can help you..." required></textarea>
+                    </div>
+
+                    <div class="form-group">
+                        <label>
+                            <input type="checkbox" name="privacy" required>
+                            I agree that my personal information will be processed according to MTG Card Shop's privacy policy *
+                        </label>
+                    </div>
+
+                    <button type="submit" class="submit-button">Send Message</button>
+                </form>
+            </div>
+        </section>
+
+        <section class="faq-section">
+            <h3>Frequently Asked Questions</h3>
+            
+            <div class="faq-item">
+                <h4>What is the delivery time?</h4>
+                <p>We ship orders same day when placed before 3:00 PM. Delivery time is normally 1-3 business days within the US.</p>
+            </div>
+
+            <div class="faq-question">
+                <h4>Do you offer international shipping?</h4>
+                <p>Yes, we ship worldwide. Shipping costs and delivery times vary depending on destination.</p>
+            </div>
+
+            <div class="faq-question">
+                <h4>Are all cards authentic?</h4>
+                <p>Yes, all our cards undergo thorough quality control to ensure authenticity and condition.</p>
+            </div>
+
+            <div class="faq-question">
+                <h4>Can I return cards?</h4>
+                <p>Yes, we have a 14-day return policy on all products in original condition and packaging.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div id="footer-content">
+            <div class="footer-section">
+                <h4>MTG Card Shop</h4>
+                <p>Your trusted partner for Magic: The Gathering cards since 2020.</p>
+            </div>
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="urzas-saga.html">Urza's Saga</a></li>
+                    <li><a href="urzas-legacy.html">Urza's Legacy</a></li>
+                    <li><a href="urzas-destiny.html">Urza's Destiny</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Customer Service</h4>
+                <p>Email: info@randommtgshop.com</p>
+                <p>Phone: 123456789</p>
+            </div>
+        </div>
+        <div id="footer-bottom">
+            <p><a href="rapport/rapport.html">Read our development report</a></p>
+        </div>
+    </footer>
+
+    <script>
+        // Update budget value when slider changes
+        const budgetSlider = document.getElementById('budget');
+        const budgetValue = document.getElementById('budget-value');
+        
+        budgetSlider.addEventListener('input', function() {
+            budgetValue.textContent = '$' + this.value;
+        });
+    </script>
+</body>
+</html>
