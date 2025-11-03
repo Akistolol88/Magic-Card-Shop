@@ -7,7 +7,6 @@
 
 body {
     font-family: Arial, sans-serif;
-    line-height: 1.6;
     color: #333;
     background-color: #fff;
 }
@@ -395,6 +394,38 @@ main {
 
 .submit-button:hover {
     background-color: #555;
+}
+
+/* Radio buttons and checkboxes */
+#format-radio-group,
+#services-checkbox-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+#format-radio-group label,
+#services-checkbox-group label {
+    display: flex;
+    align-items: center;
+    font-weight: normal;
+    cursor: pointer;
+}
+
+#format-radio-group input[type="radio"],
+#services-checkbox-group input[type="checkbox"] {
+    width: auto;
+    margin-right: 0.5rem;
+    margin-bottom: 0;
+}
+
+/* Range slider styling */
+.form-footer {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 0.5rem;
+    font-size: 0.9rem;
+    color: #666;
 }
 
 /* Footer */
