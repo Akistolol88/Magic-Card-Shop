@@ -49,9 +49,9 @@
     <main>
         <section>
             <h2>1. Syfte och målgrupp</h2>
-            <p>I uppgiften skapades en webbplats för MTG Card Shop, en fiktiv e-handelsbutik som specialiserar sig på försäljning av Magic: The Gathering samlarkort. Som innehållsbas för produktkatalogen användes det klassiska Urza's Saga-blocket (1998-1999) för att demonstrera webbplatsens funktionalitet.</p>
-            <p>Syfte med webbplatsen är att erbjuda Magic: The Gathering-spelare en användarvänlig plattform för att köpa samlarkort från olika expansioner. Webbplatsen ska fungera som en fullständig e-handelsplattform som gör det enkelt för kunder att hitta kort från specifika expansioner och slutföra köp. Urza's Saga-blocket valdes som innehållsexempel eftersom det representerar en välkänd och historiskt betydelsefull del av Magic's historia samt att det var under den tiden jag började spela Magic själv.</p>
-            <p>Målgruppen består av Magic: The Gathering-spelare i alla åldrar och erfarenhetsnivåer, från nybörjare till erfarna competitive spelare och samlare. Målgruppen inkluderar både spelare som är intresserade av moderna format och de som uppskattar klassiska kort och Legacy-format.</p>
+            <p>I uppgiften skapades en webbplats för MTG Card Shop, en e-handelsbutik som specialiserar sig på försäljning av Magic: The Gathering samlarkort. Som innehållsbas för produktkatalogen användes det klassiska Urza's Saga-blocket för att demonstrera webbplatsens funktionalitet.</p>
+            <p>Syfte med webbplatsen är att erbjuda Magic: The Gathering-spelare en användarvänlig plattform för att köpa samlarkort från olika expansioner. Webbplatsen ska fungera som en fullständig e-handelsplattform som gör det enkelt för kunder att hitta kort från specifika expansioner. Urza's Saga-blocket valdes som innehållsexempel eftersom det representerar en välkänd och historiskt betydelsefull del av Magic's historia samt att det var under den tiden jag började spela Magic själv.</p>
+            <p>Målgruppen består av Magic: The Gathering-spelare i alla åldrar och erfarenhetsnivåer, från nybörjare till erfarna spelare. Målgruppen inkluderar både spelare som är intresserade av moderna format och de som uppskattar äldre format så som Legacy och vintage.</p>
             <h3>Användarnas behov</h3>
             <ul>
                 <li>Enkelt hitta och köpa specifika Magic: The Gathering kort</li>
@@ -70,7 +70,7 @@
                 <li>Startsida med välkomsttext och featured Magic: The Gathering produkter</li>
                 <li>Separata produktsidor baserade på Urza's Saga-blocket som innehållsexempel</li>
                 <li>Produktkataloger med Magic-kort, expansion-information och priser</li>
-                <li>Kontaktsida med företagsinformation och kontaktuppgifter på engelska</li>
+                <li>Kontaktsida med företagsinformation och kontaktuppgifter</li>
                 <li>Formulär för kundkontakt med olika Magic-format preferenser</li>
                 <li>Information om Magic expansioner och deras egenskaper (exemplifierat med Urza's block)</li>
                 <li>Lokal navigation för korttyper inom huvudexpansionen</li>
@@ -92,11 +92,11 @@
         </section>
         <section>
             <h2>3. Beskrivning av arbetet</h2>
-            <p>När jag började arbeta med webbplatsen beslutade jag mig för att följa Garretts femplanmodell från boken "The Elements of User Experience" som en guide för designprocessen. Det första steget var att definiera strategin (Garrett, 2011, s.36-54) där jag tänkte igenom vem som skulle använda sidan och varför. Jag kom fram till att målgruppen skulle vara Magic: The Gathering-spelare som vill köpa kort online, och att webbplatsen skulle fungera som en e-handelsbutik. Eftersom jag själv har spelat Magic sedan Urza's Saga-blocket kom ut, kändes det naturligt att använda just dessa set som exempel för att visa hur sidan skulle fungera.</p>
+            <p>När jag började arbeta med webbplatsen beslutade jag mig för att följa Garretts femplanmodell från boken "The Elements of User Experience" som en guide. Det första steget var att gå igenom strategin (Garrett, 2011, s.36-54) där jag tänkte igenom vem som skulle använda sidan och varför. Jag kom fram till att målgruppen skulle vara Magic: The Gathering-spelare som vill köpa kort online, och att webbplatsen skulle fungera som en onlineshop. Eftersom jag själv har spelat Magic sedan Urza's Saga-blocket kom ut, kändes det naturligt att använda just dessa set som exempel för att visa hur sidan skulle fungera.</p>
             
             <p>I nästa steg arbetade jag med scope-planet (Garrett, 2011, s.58-77) för att bestämma vad sidan faktiskt skulle innehålla och vilka funktioner den behövde. Jag listade upp allt från responsiv design till formulärhantering, och planerade innehållet kring Magic-kort från Urza's-blocket. Det var viktigt för mig att skapa något som skulle kunna fungera för alla Magic-expansioner, inte bara de jag använde som exempel.</p>
             
-            <p>Structure-fasen (Garrett, 2011, s.80-105) var där jag verkligen började forma hur användarna skulle navigera på sidan. Jag skapade en huvudnavigation för olika expansioner och en mer detaljerad navigation inom varje expansion för olika korttyper. Här tog jag inspiration från hur jag själv brukar leta efter kort - först väljer man expansion, sedan korttyp. Jag ville att flödet skulle kännas naturligt för alla som är vana vid Magic.</p>
+            <p>Structure-fasen (Garrett, 2011, s.80-105) var där jag verkligen började forma hur användarna skulle navigera på sidan. Jag skapade en huvudnavigation för olika expansioner och en mer detaljerad navigation inom varje expansion för olika korttyper. Här tog jag inspiration från hur jag själv brukar leta efter kort - först väljer man expansion, sedan korttyp. I ett slutgiltigt exempel skulle jag ha med alla expansioner givetvis, och de skulle synas vid sidan om.</p>
             
             <p>När jag kom till skeleton-planet (Garrett, 2011, s.108-131) började jag skissa på hur sidan skulle se ut. Jag prioriterade att korten skulle vara i centrum och att informationen skulle vara tydlig och lättläst. Jag valde CSS Grid för produktgalleriet eftersom det ger bra kontroll över layouten, och Flexbox för navigationen. </p>
             
@@ -108,8 +108,7 @@
             <ul>
                 <li>Bilder hämtades från Svenskamagic.com i högre upplöst format (632x896px och liknande)</li>
                 <li>ImageMagick användes för att skala ner bilderna till max 300x300 med bibehållna proportioner</li>
-                <li>Filstorlekarna reducerades från ~30KB-690KB till ~18KB-29KB för förbättrad laddningstid</li>
-                <li>CSS konfigurerades med <code>height: auto</code> och <code>max-width: 300px</code> för responsiv visning</li>
+                <li>Filstorlekarna reducerades från ~500KB-690KB till ~18KB-29KB för förbättrad laddningstid</li>
                 <li>Optimization resulterade i betydligt förbättrad sidprestanda och användarupplevelse</li>
                 <li>Jag har också placeholders för bilder, då de skulle ta väldigt lång tid att fixa otroligt många bilder till alla kort!</li>
             </ul>
@@ -132,9 +131,7 @@
             <ul>
                 <li>Användare ska kunna navigera mellan olika Magic: The Gathering expansioner</li>
                 <li>Användare ska kunna filtrera kort efter korttyp inom specifika expansioner</li>
-                <li>Användare ska kunna skicka kontaktformulär med Magic-format preferenser</li>
-                <li>Användare ska kunna välja föredraget spelformat via radioknappar (Standard, Modern, Legacy, Commander)</li>
-                <li>Användare ska kunna specificera budget via range slider</li>
+                <li>Användare ska kunna skicka kontaktformulär med Magic-format preferenser och orderinfo m.m</li>
                 <li>Användare ska kunna välja flera tjänster via checkboxar inklusive deck-building</li>
                 <li>Webbplatsen ska vara responsiv och fungera på olika skärmstorlekar</li>
                 <li>Användare ska kunna komma åt rapport via länk i footer</li>
@@ -145,9 +142,9 @@
         </section>
         <section>
             <h2>Källförteckning</h2>
-            <p>Garrett, J.J. (2011). <em>The Elements of User Experience: User-Centered Design for the Web and Beyond</em>. 2nd ed. Berkeley: New Riders.</p>
-            <p>ImageMagick Studio LLC. (2024). <em>ImageMagick</em>. Tillgänglig: https://imagemagick.org [Hämtad 2025-11-01].</p>
-            <p>Svenskamagic.com. (2024). <em>Magic: The Gathering kortbilder</em>. Tillgänglig: https://svenskamagic.com [Hämtad 2025-11-01].</p>
+            <p>Garrett, J.J. (2011). <em>The Elements of User Experience: User-Centered Design for the Web and Beyond 2nd ed.</em></p>
+            <p>ImageMagick -  Tillgänglig: https://imagemagick.org </p>
+            <p>Svenskamagic.com -  Tillgänglig: https://svenskamagic.com </p>
         </section>
     </main>
 </body>
